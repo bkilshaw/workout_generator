@@ -6,6 +6,8 @@ defmodule WorkoutGenerator.Interact do
     IO.gets("\nEnter a name:")
     |> String.trim()
     |> Generator.create()
+    |> Enum.join("\n")
+    |> IO.puts()
 
     start()
   end
